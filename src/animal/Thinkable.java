@@ -1,9 +1,14 @@
 package animal;
 
-import animal.polymorphism.Human;
-
 public interface Thinkable {
-    void think(Human opponent);
+    
+    public void think();
+   
+    public void setthink(String think) {
+        this.think = think;
+    }
+    
+    public abstract void ge¥reeting();
 }
 
 
