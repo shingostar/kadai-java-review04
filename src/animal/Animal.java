@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public class Animal{
     //  フィールド
     private String name; //    氏名
     private int age; // 年齢
@@ -8,29 +8,14 @@ public class Animal {
     public Animal() {
     }
     //  引数ありコンストラクタ
-    public Animal(String n,int a) {
-
-        this.setName(n);
-        this.setAge(a);
+    public Animal(String name,int age) {
+        this.name = name;
+        this.age = age;
     }
 
     //  報告するメソッド
     public void say() {
-        System.out.println(getName()+"です。"+getAge()+"歳です。");
-
+        System.out.println(this.name+"です。"+this.age+"歳です。");
     }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-
 }
 

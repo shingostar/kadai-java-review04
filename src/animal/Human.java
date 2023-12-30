@@ -1,21 +1,17 @@
 package animal;
 
-public class Human extends Animal {
-    public void getThink(String think){
-
+public class Human implements Thinkable {
+    private String think;
+    //  コンストラクタ
+    public Human() {
+    }
+    //  引数ありコンストラクタ
+    public Human(String think) {
+        this.think = think;
     }
 
-    public void setThinkzble(String think) {
-        this.setThink(think);}
-
-
-    public void say() {
-        System.out.println(getName()+"です。"+getAge()+"歳です。");
-    }
-
-
-    public void setThink(String think) {
-        System.out.println("私は"+think+"のことを考えています。");
+    public void think() {
+    System.out.println("私は"+think+"について考えています。");
     }
 }
 
