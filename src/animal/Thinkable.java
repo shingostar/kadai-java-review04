@@ -1,5 +1,7 @@
 package animal;
+
 public interface Thinkable {
-    //  考える
+    //戻り値なしのthink抽象メソッド
     public void think();
+
 }
